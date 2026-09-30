@@ -112,6 +112,8 @@ export function Engagement() {
   )
 }
 
+const CALENDLY_URL = 'https://calendly.com/haseebheretiti/new-meeting-1'
+
 export function Consultation() {
   return (
     <section id="consultation" aria-labelledby="consultation-title" className="scroll-mt-16 px-5 py-28 md:px-10 md:py-40">
@@ -130,7 +132,9 @@ export function Consultation() {
             </p>
           </div>
           <a
-            href="#contact"
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="reveal mt-10 inline-flex items-center gap-3 bg-primary px-6 py-4 text-xs tracking-[0.2em] text-primary-foreground uppercase transition-colors hover:bg-[#c01d17]"
           >
             Book a GTM Consultation <span aria-hidden="true">{'→'}</span>
@@ -209,7 +213,9 @@ export function FinalCta() {
             Build My GTM System <span aria-hidden="true">{'→'}</span>
           </a>
           <a
-            href="mailto:hello@hasbyte.com?subject=GTM%20consultation"
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex w-full items-center justify-center border border-foreground/25 px-6 py-4 text-xs tracking-[0.2em] uppercase transition-colors hover:border-foreground sm:w-auto"
           >
             Book a GTM Consultation
